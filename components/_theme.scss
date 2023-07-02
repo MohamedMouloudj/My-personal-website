@@ -1,0 +1,9 @@
+html:has(#toggle__checkbox:checked){
+    --color-background: var(--color-very-dark-blue);
+    --color-text: var(--color-white);
+    --color-input-border: var(--color-white);
+    --color-box-shadow:var(--color-black);
+    --color-grey:var(--color-light-orange);
+    --color-box-img:rgb(255, 198, 92);
+    --color-link-bg:var(--color-light-orange);
+}

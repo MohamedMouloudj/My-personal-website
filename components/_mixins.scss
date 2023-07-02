@@ -1,0 +1,6 @@
+/* Used in _globalStyle.scss & in _contactAndFooter.scss */
+@mixin grid2Columns($rowGap: 0, $columnGap: 0){
+    grid-template-columns:repeat(2, 1fr);
+    row-gap: $rowGap;
+    column-gap: $columnGap;
+}

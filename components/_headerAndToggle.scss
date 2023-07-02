@@ -1,0 +1,86 @@
+header{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-background);
+    z-index: 1;
+}
+header::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    border-bottom: 0.1rem solid var(--color-input-border);
+    background-color: var(--color-background);
+    top: 0;
+}
+.burger-menu__checkbox{display: none;}
+
+.global-container:has(#bio:target) .a-bio,
+.global-container:has(#skills:target) .a-skills,
+.global-container:has(#projects:target) .a-projects,
+.global-container:has(#contact:target) .a-contact,
+.global-container:has(#clients:target) .a-clients,
+.global-container:has(#media:target) .a-media{
+    color: var(--color-red);
+    font-weight: var(--font-weight-bold);
+    text-decoration: underline;
+}
+.nav__list{
+    display: flex;
+    gap: 1.1em;
+}
+.nav__list a{
+    text-decoration: none;
+}
+.nav__list a:hover{
+    text-decoration: underline;
+}
+/*Toggle part*/
+.toggle{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    align-items: center;
+}
+.toggle > h3{
+    font-weight: var(--font-weight-medium);
+    font-size: 20px;
+}
+
+#toggle__checkbox{
+    display: none;
+}
+.toggle__label{
+    display: block;
+    background-color: var(--color-black);
+    color:var(--color-white);
+    border-radius: 1em;
+    width:5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    padding: .25em .3em ;
+    transition: .5s;
+}
+.toggle__label::after{
+    content: "";
+    display: block;
+    background-color: var(--color-white);
+    width:1em;
+    height: 1em;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+#toggle__checkbox:checked + .toggle__label{
+    background-color: var(--color-white);
+    border: var(--color-black) solid 1px;
+}
+#toggle__checkbox:checked + .toggle__label::after{
+    transform:translatex(2rem);
+    background-color: var(--color-very-dark-blue);
+    transition: .4s;
+}
