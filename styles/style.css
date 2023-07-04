@@ -241,10 +241,6 @@ header::before {
   grid-area: 2/1/3/2;
 }
 
-.bio__almdrasa {
-  color: var(--color-green);
-}
-
 .bio__facebook {
   color: var(--color-blue);
 }
@@ -255,10 +251,6 @@ header::before {
 
 .bio__linkedin {
   color: var(--color-dark-blue);
-}
-
-.bio__youtube {
-  color: var(--color-red);
 }
 
 .bio__description > span {
@@ -385,15 +377,6 @@ header::before {
   font-size: var(--font-size-18);
   color: var(--color);
   font-weight: var(--font-weight-regular);
-}
-
-.media {
-  align-items: center;
-  justify-content: center;
-}
-
-.media__video {
-  max-width: 100%;
 }
 
 .projects h1 {
@@ -636,7 +619,7 @@ html:has(#toggle__checkbox:checked) {
     grid-area: 4/2/4/3;
   }
   .js {
-    grid-area: 3/2/3/3;
+    grid-area: 3/1/3/2;
   }
   .projects__image1 {
     justify-self: center;
@@ -653,6 +636,7 @@ html:has(#toggle__checkbox:checked) {
   }
   .contact__form {
     order: -1;
+    margin-bottom: 5rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -695,6 +679,7 @@ html:has(#toggle__checkbox:checked) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 5rem;
   }
   .contact h1 {
     font-size: 5rem;
